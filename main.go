@@ -80,8 +80,6 @@ func randomizeCase(str string, config *Config) string {
 
 	for i, char := range chars {
 
-		chars[i] = char
-
 		if randInt(0, 20) < config.UpperCaseChance {
 			chars[i] = strings.ToUpper(char)
 		}
@@ -96,8 +94,6 @@ func tripleLetters(str string, config *Config) string {
 	chars := strings.Split(str, "")
 
 	for i, char := range chars {
-
-		chars[i] = char
 
 		if randInt(0, 20) < config.TripleChance {
 			chars[i] = strings.Repeat(char, 3)
