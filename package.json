@@ -1,6 +1,6 @@
 {
   "name": "swagify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "repository": "git@github.com:Artemis69/swagify-wasm.git",
   "author": "Artemiy Schukin",

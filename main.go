@@ -206,7 +206,7 @@ func swagify(this js.Value, args []js.Value) interface{} {
 	var tripleChance int = 1
 	var maxTags int = 3
 
-	if len(args) == 2 {
+	if len(args) == 2 && args[1].Type() == 6 {
 
 		if args[1].Get("letterReplacementChange").Type() == 3 {
 			letterReplacementChange = args[1].Get("letterReplacementChange").Int()
