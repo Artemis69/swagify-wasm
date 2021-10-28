@@ -1,4 +1,4 @@
-import Go from "./wasm_exec.ts";
+import Go from "./wasm_exec.js";
 import { swagify as swagifyTS } from "https://deno.land/x/swagify@v1.1.2/mod.ts";
 
 declare global {
