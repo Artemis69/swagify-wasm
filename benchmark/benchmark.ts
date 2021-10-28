@@ -7,7 +7,7 @@ declare global {
 
 const go = new Go();
 
-const wasmCode = await Deno.readFile("../dist/main.wasm");
+const wasmCode = await Deno.readFile("./dist/main.wasm");
 const wasmModule = new WebAssembly.Module(wasmCode);
 const instance = await WebAssembly.instantiate(wasmModule, go.importObject);
 
